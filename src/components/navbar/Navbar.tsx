@@ -10,6 +10,7 @@
 // Ya no hace con Link un refresh como con el <a></a>
 import { HomeIcon } from '@primer/octicons-react';
 import Link from 'next/link';
+import { ActiveLink } from '../active-link/ActiveLink';
 
 const navItems = [
   { path: '/about', text: 'About' },
@@ -32,10 +33,7 @@ export const Navbar = /*async*/ () => {
 
       {
         navItems.map(navItem => (
-          <Link 
-          className="mr-2"
-          key={ navItem.path }
-          href={ navItem.path }>{ navItem.text }</Link>
+          <ActiveLink key={navItem.path} {...navItem} />
         ))
       }
 
