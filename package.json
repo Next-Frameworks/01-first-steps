@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@primer/octicons-react": "^19.15.1",
     "first-steps": "file:",
     "next": "15.3.2",
     "react": "^19.0.0",
