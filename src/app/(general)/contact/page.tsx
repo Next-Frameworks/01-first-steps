@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Contact Page',
@@ -7,12 +7,10 @@ export const metadata: Metadata = {
   authors: [{name: 'Angel'}]
  };
  
-export default function ContactaPage() {
+export default function ContactPage() {
   return (
     <>
-      <span className="text-7xl flex justify-center">
-        Contact Page
-        </span>
+      <span className="text-7xl">Contact Page</span>
     </>
   );
 }
