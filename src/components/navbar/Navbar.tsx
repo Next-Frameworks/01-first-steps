@@ -1,6 +1,16 @@
 
+// const temporalAsync = () => {
+//   return new Promise( (resolve) => {
+//     setTimeout(() => {
+//       resolve(true);
+//     }, 2000);
+//   });
+// }
 
-export const Navbar = () => {
+export const Navbar = /*async*/ () => {
+
+  // await temporalAsync();
+
   return (
     <nav className="flex bg-blue-800 bg-opacity-30 p-2 m-2 rounded">
       <span>Home</span>
